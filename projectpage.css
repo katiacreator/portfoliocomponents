@@ -1,0 +1,114 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    overflow-x: hidden;
+    color: silver;
+    background-color: rgb(32, 33, 33);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.section1__app-title{
+    color: cyan;
+}
+
+.section1__app-description, .section3__carousel--slide-heading, .section3__carousel--slide-description{
+    display: block;
+    text-align: center;
+}
+.section1__app-demo-link{
+    background-color: cyan;
+    color: black;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section1__app-demo-link:hover{
+    color: cyan;
+    background-color: black;
+    border: solid cyan 1px
+}
+
+.section2__app--img img{
+    border-radius: 1rem;
+}
+
+.section3__heading{
+    text-align: center;
+}
+.section3__carousel{
+    /* border: solid red 1px; */
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.section3__carousel--slide{  
+    border-radius: 1rem;
+    background-color: silver;
+    color: black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section3__carousel--slide__color-stack, .section3__carousel--slide__tech-stack {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+.section3__carousel--slide__color-stack li{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.section3__carousel--slide__color-stack li:first-child{
+    background-color: gold;
+}
+.section3__carousel--slide__color-stack li:nth-child(2){
+    background-color: peru;
+}
+.section3__carousel--slide__color-stack li:nth-child(3){
+    background-color: magenta;
+}
+.section3__carousel--slide__color-stack li:nth-child(4){
+    background-color: slateblue;
+}
+.section3__carousel--slide__color-stack li:last-child{
+    background-color: rebeccapurple;
+}
+
+.section3__carousel--slide-description{
+    border-bottom: solid black 1px;
+    padding: 0.5rem;
+}
